@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:screenOrientation="portrait"
+    android:background="#352b3b"
+    tools:context="io.revlver.revlver.Library" >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:screenOrientation="portrait">
+        <ListView
+            android:id="@+id/song_list"
+            android:layout_width="310dp"
+            android:layout_height="588dp"
+            android:paddingTop="120dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:scrollbars="none">
+        </ListView>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/player_bar_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom"
+        android:background="@drawable/player_bar_mini" />
+
+    <ImageButton
+        android:id="@+id/player_album_art_mini"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_vertical|bottom"
+        android:background="@drawable/abbeyroad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="3dp" />
+
+    <ImageButton
+        android:id="@+id/player_heart_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_heart_mini"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible"
+        android:onClick="heart"/>
+
+    <ImageButton
+        android:id="@+id/player_hearted_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_hearted_mini"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible"
+        android:onClick="hearted"/>
+
+    <ImageButton
+        android:id="@+id/player_play_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_play_mini"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/player_pause_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_pause_mini"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible"
+        android:onClick="pause" />
+
+    <ImageButton
+        android:id="@+id/player_next_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_next_mini"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="player_next_mini" />
+
+</FrameLayout>
