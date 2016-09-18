@@ -12,6 +12,7 @@ import android.app.Activity;
 import android.net.Uri;
 import android.content.ContentResolver;
 import android.database.Cursor;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -142,6 +143,56 @@ public class Library extends Activity implements MediaPlayerControl {
             @Override
             public void onClick(View arg0) {
                 Intent intent = new Intent(context, Player.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton back_2_lib = (ImageButton) findViewById(R.id.back_2_lib);
+        back_2_lib.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton folder = (ImageButton) findViewById(R.id.folder);
+        folder.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, Library.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton artists = (ImageButton) findViewById(R.id.artists);
+        artists.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, ArtistsFragment.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton albums = (ImageButton) findViewById(R.id.albums);
+        albums.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, AlbumsFragment.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton songs = (ImageButton) findViewById(R.id.songs);
+        songs.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent intent = new Intent(context, SongsFragment.class);
                 startActivity(intent);
             }
         });

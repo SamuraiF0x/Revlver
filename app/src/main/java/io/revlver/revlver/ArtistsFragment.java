@@ -10,9 +10,9 @@ package io.revlver.revlver;
         import android.view.View;
         import android.view.ViewGroup;
 
-public class TwoFragment extends Fragment{
+public class ArtistsFragment extends Fragment{
 
-    public TwoFragment() {
+    public ArtistsFragment() {
         // Required empty public constructor
     }
 

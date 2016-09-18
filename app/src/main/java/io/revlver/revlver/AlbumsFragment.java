@@ -1,7 +1,7 @@
 package io.revlver.revlver;
 
 /**
- * Created by Samurai Fox on 12-09-16.
+ * Created by Samurai Fox on 13-09-16.
  */
 
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class OneFragment extends Fragment{
+public class AlbumsFragment extends Fragment {
 
-    public OneFragment() {
+    public AlbumsFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +25,7 @@ public class OneFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.folder, container, false);
+        return inflater.inflate(R.layout.albums, container, false);
     }
 
 }
