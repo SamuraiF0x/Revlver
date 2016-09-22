@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left|top"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:background="@drawable/back_to_library"
         android:clickable="true" />
 
@@ -42,7 +42,7 @@
         android:background="@drawable/equalizer"
         android:clickable="true"
         android:layout_marginTop="45dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="20dp"
         android:onClick="EQ" />
 
     <ImageButton
@@ -67,7 +67,7 @@
         android:layout_gravity="left|bottom"
         android:background="@drawable/repeat_off"
         android:clickable="true"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginBottom="170dp"
         android:visibility="visible"
         android:onClick="repeat_one"/>
@@ -79,7 +79,7 @@
         android:layout_gravity="left|bottom"
         android:background="@drawable/repeat_one"
         android:clickable="true"
-        android:layout_marginLeft="4dp"
+        android:layout_marginLeft="6dp"
         android:layout_marginBottom="160dp"
         android:visibility="invisible"
         android:onClick="repeat_all"/>
@@ -91,7 +91,7 @@
         android:layout_gravity="left|bottom"
         android:background="@drawable/repeat_all"
         android:clickable="true"
-        android:layout_marginLeft="2dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginBottom="160dp"
         android:visibility="invisible"
         android:onClick="repeat_off"/>
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
         android:layout_marginBottom="170dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/shuffle_off"
         android:clickable="true"
         android:visibility="visible"
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
         android:layout_marginBottom="170dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="20dp"
         android:background="@drawable/shuffle_on"
         android:clickable="true"
         android:visibility="invisible"
@@ -181,7 +181,7 @@
         android:background="@drawable/queue"
         android:clickable="true"
         android:layout_marginBottom="48dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:visibility="visible"
         android:onClick="queue" />
 
@@ -193,7 +193,7 @@
         android:background="@drawable/cancel"
         android:clickable="true"
         android:layout_marginBottom="50dp"
-        android:layout_marginLeft="18dp"
+        android:layout_marginLeft="23dp"
         android:visibility="invisible"
         android:onClick="cancel_queue" />
 
@@ -202,7 +202,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="44dp"
         android:background="@drawable/heart"
         android:visibility="visible"
@@ -213,7 +213,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|bottom"
-        android:layout_marginRight="15dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="44dp"
         android:background="@drawable/hearted"
         android:visibility="invisible"

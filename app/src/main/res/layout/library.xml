@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left|top"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="20dp"
         android:background="@drawable/back_to_menu"
         android:clickable="true" />
 
@@ -138,18 +138,18 @@
         android:clickable="true" />
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:screenOrientation="portrait">
         <ListView
             android:id="@+id/song_list"
             android:layout_width="310dp"
-            android:layout_height="588dp"
-            android:paddingTop="110dp"
+            android:layout_height="500dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
             android:scrollbars="none">
         </ListView>
     </LinearLayout>
