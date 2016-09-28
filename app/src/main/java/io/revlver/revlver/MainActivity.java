@@ -30,8 +30,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         addListenerOnButton();
 
-
-
         //-----------------FONT-----------------
         TextView textViewCustom = (TextView) findViewById(R.id.library_text);
         Typeface Library = Typeface.createFromAsset(getAssets(), "fonts/akrobat/Akrobat-Thin.otf");
@@ -54,9 +52,8 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, Library.class);
+                Intent intent = new Intent(context, Library_FolderTab.class);
                 startActivity(intent);
-
             }
 
         });
@@ -69,26 +66,24 @@ public class MainActivity extends Activity {
             public void onClick(View arg0) {
                 Intent intent = new Intent(context2, Player.class);
                 startActivity(intent);
-
             }
 
         });
-
     }
 
     //-----------------HEART-----------------
-    public void heart(View v) {
-        ImageButton heart = (ImageButton) findViewById(R.id.player_heart_mini);
-        heart.setVisibility(View.INVISIBLE);
-        ImageButton hearted = (ImageButton) findViewById(R.id.player_hearted_mini);
-        hearted.setVisibility(View.VISIBLE);
-    }
+    public void heart_add_to_hearted_playlist(View v) {
+        boolean heart = true;
 
-    public void hearted(View v) {
-        ImageButton heart = (ImageButton) findViewById(R.id.player_heart_mini);
-        heart.setVisibility(View.VISIBLE);
-        ImageButton hearted = (ImageButton) findViewById(R.id.player_hearted_mini);
-        hearted.setVisibility(View.INVISIBLE);
+        if ( heart == true) {
+            ImageButton heart_button = (ImageButton) findViewById(R.id.player_heart_mini);
+            heart_button.setVisibility(View.INVISIBLE);
+            ImageButton heart_button2 = (ImageButton) findViewById(R.id.player_hearted_mini);
+            heart_button2.setVisibility(View.VISIBLE);}
+        else {
+            ImageButton hearted_button = (ImageButton) findViewById(R.id.player_heart_mini);
+            hearted_button.setVisibility(View.VISIBLE);
+            ImageButton hearted_button2 = (ImageButton) findViewById(R.id.player_hearted_mini);
+            hearted_button2.setVisibility(View.INVISIBLE);}
     }
-
 }

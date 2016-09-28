@@ -12,7 +12,6 @@ import android.app.Activity;
 import android.net.Uri;
 import android.content.ContentResolver;
 import android.database.Cursor;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -29,7 +28,7 @@ import io.revlver.revlver.MusicService.MusicBinder;
 import android.widget.MediaController;
 import android.widget.MediaController.MediaPlayerControl;
 
-public class Library extends Activity implements MediaPlayerControl {
+public class Library_FolderTab extends Activity implements MediaPlayerControl {
 
     private ArrayList<Song> songList;
     private ListView songView;
@@ -42,13 +41,13 @@ public class Library extends Activity implements MediaPlayerControl {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.library);
+        setContentView(R.layout.library_folder_tab);
         addListenerOnButton();
 
 
         songView = (ListView)findViewById(R.id.song_list);
         songList = new ArrayList<Song>();
-        getSongList();
+        getSongDataList();
 
         Collections.sort(songList, new Comparator<Song>(){
             public int compare(Song a, Song b){
@@ -89,7 +88,7 @@ public class Library extends Activity implements MediaPlayerControl {
         }
     }
 
-    public void getSongList() {
+    public void getSongDataList() {
         //retrieve song info
 
         ContentResolver musicResolver = getContentResolver();
@@ -162,7 +161,7 @@ public class Library extends Activity implements MediaPlayerControl {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, Library.class);
+                Intent intent = new Intent(context, Library_FolderTab.class);
                 startActivity(intent);
             }
         });
@@ -172,7 +171,7 @@ public class Library extends Activity implements MediaPlayerControl {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, ArtistsFragment.class);
+                Intent intent = new Intent(context, ArtistsTab.class);
                 startActivity(intent);
             }
         });
@@ -182,7 +181,7 @@ public class Library extends Activity implements MediaPlayerControl {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, AlbumsFragment.class);
+                Intent intent = new Intent(context, AlbumsTab.class);
                 startActivity(intent);
             }
         });
@@ -192,7 +191,7 @@ public class Library extends Activity implements MediaPlayerControl {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(context, SongsFragment.class);
+                Intent intent = new Intent(context, SongsTab.class);
                 startActivity(intent);
             }
         });

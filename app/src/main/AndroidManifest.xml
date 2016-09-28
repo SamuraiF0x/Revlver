@@ -18,7 +18,7 @@
         <activity android:name=".Player" >
         </activity>
 
-        <activity android:name=".Library" >
+        <activity android:name=".Library_FolderTab" >
         </activity>
 
         <service android:name="io.revlver.revlver.MusicService"/>

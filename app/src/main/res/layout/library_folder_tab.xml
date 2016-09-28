@@ -180,7 +180,7 @@
         android:layout_marginRight="115dp"
         android:layout_marginBottom="2dp"
         android:visibility="visible"
-        android:onClick="heart"/>
+        android:onClick="heart_add_to_hearted_playlist"/>
 
     <ImageButton
         android:id="@+id/player_hearted_mini"
@@ -191,7 +191,7 @@
         android:layout_marginRight="115dp"
         android:layout_marginBottom="2dp"
         android:visibility="invisible"
-        android:onClick="hearted"/>
+        android:onClick="heart_add_to_hearted_playlist"/>
 
     <ImageButton
         android:id="@+id/player_play_mini"

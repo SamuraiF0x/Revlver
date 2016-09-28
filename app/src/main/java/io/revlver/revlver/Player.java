@@ -61,8 +61,8 @@ public class Player extends AppCompatActivity {
     //------------LIBRARY BUTTON----------------------
     public void addListenerOnButton() {
         final Context context = this;
-        ImageButton back_2_lib = (ImageButton) findViewById(R.id.back_2_lib);
-        back_2_lib.setOnClickListener(new OnClickListener() {
+        ImageButton back_to_library = (ImageButton) findViewById(R.id.back_to_library);
+        back_to_library.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
