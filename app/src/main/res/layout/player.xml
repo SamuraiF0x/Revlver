@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="io.revlver.revlver.MainActivity"
+    android:backgroundTintMode="screen"
+    android:background="#352b3b"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/Background_blurred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/abbeyroad_back2"
+
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="-100dp" />
+
+    <ImageButton
+        android:id="@+id/back_to_library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back_to_library"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/EQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:background="@drawable/equalizer"
+        android:clickable="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="20dp"
+        android:onClick="EQ" />
+
+    <ImageButton
+        android:id="@+id/album_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/abbeyroad"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="195dp"
+        android:clickable="true"
+        android:contentDescription="show options" />
+
+    <ImageButton
+        android:id="@+id/repeat_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/repeat_off"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="170dp"
+        android:visibility="visible"
+        android:onClick="repeat_one"/>
+
+    <ImageButton
+        android:id="@+id/repeat_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/repeat_one"
+        android:clickable="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="160dp"
+        android:visibility="invisible"
+        android:onClick="repeat_all"/>
+
+    <ImageButton
+        android:id="@+id/repeat_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/repeat_all"
+        android:clickable="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="160dp"
+        android:visibility="invisible"
+        android:onClick="repeat_off"/>
+
+    <ImageButton
+        android:id="@+id/shuffle_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="170dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shuffle_off"
+        android:clickable="true"
+        android:visibility="visible"
+        android:onClick="shuffle_off_button" />
+
+    <ImageButton
+        android:id="@+id/shuffle_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="170dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shuffle_on"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:onClick="shuffle_on_button" />
+
+    <ImageView
+        android:id="@+id/circle_play_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/play_pause_circle"
+        android:layout_marginBottom="20dp"
+        android:clickable="false" />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:clickable="true"
+        android:touchscreenBlocksFocus="false"
+        android:background="@drawable/play"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="6dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:clickable="true"
+        android:touchscreenBlocksFocus="false"
+        android:background="@drawable/pause"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="0dp"
+        android:visibility="invisible" />
+
+    <MediaController
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/previous2"
+        android:layout_marginBottom="45dp"
+        android:clickable="true"
+        android:layout_marginLeft="72dp" />
+
+    <MediaController
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="45dp"
+        android:layout_marginRight="72dp"
+        android:clickable="true"
+        android:background="@drawable/next2" />
+
+    <ImageButton
+        android:id="@+id/queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/queue"
+        android:clickable="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="visible"
+        android:onClick="queue" />
+
+    <ImageButton
+        android:id="@+id/cancel_queue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:background="@drawable/cancel"
+        android:clickable="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="23dp"
+        android:visibility="invisible"
+        android:onClick="cancel_queue" />
+
+    <ImageButton
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/heart"
+        android:visibility="visible"
+        android:onClick="heart" />
+
+    <ImageButton
+        android:id="@+id/hearted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/hearted"
+        android:visibility="invisible"
+        android:onClick="hearted" />
+
+    <MediaController
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/progress_bar"
+        android:layout_marginBottom="121dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" />
+
+    <EditText
+        android:id="@+id/song_start"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="115dp"
+        android:layout_marginLeft="9dp"
+        android:enabled="false"
+        android:text="00:00"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="@android:color/transparent" />
+
+    <EditText
+        android:id="@+id/song_end"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="115dp"
+        android:enabled="false"
+        android:text="1:31"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="9dp" />
+
+    <EditText
+        android:id="@+id/song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Golden Slumbers"
+        android:textColor="#ffffff"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:textSize="20sp"
+        android:layout_marginTop="125dp"
+        android:typeface="sans"
+        android:background="@android:color/transparent"
+        android:enabled="false" />
+
+    <EditText
+        android:id="@+id/song_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="The Beatles"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:layout_marginBottom="160dp"
+        android:background="@android:color/transparent"
+        android:enabled="false" />
+
+</FrameLayout>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="io.revlver.revlver.HelloActivity"
+    android:backgroundTintMode="screen"
+    android:background="#352b3b"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/Background_blurred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/abbeyroad_back2"
+
+
+        android:layout_marginLeft="-100dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="-100dp" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fillViewport="true"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top|center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:stretchColumns="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:stretchColumns="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/library_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/library_button"
+                    android:layout_marginLeft="85dp" />
+
+                <EditText
+                    android:id="@+id/library_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Library"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="140dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="200dp"
+                android:stretchColumns="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/most_played"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Most Played"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginLeft="20dp"
+                    android:paddingBottom="20dp"/>
+
+
+
+                <EditText
+                    android:id="@+id/song1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="1. Golden Slumbers"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/song2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="2. Good Vibrations"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/song3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="3. The End"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/song4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="4. Whole Lotta Love"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/song5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="5. Ramble On"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"
+                    android:enabled="false"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ImageButton
+        android:id="@+id/recently_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/recently_added"
+        android:layout_marginLeft="20dp" />
+
+    <ImageButton
+        android:id="@+id/recently_played"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:background="@drawable/recently_played"
+        android:layout_marginRight="20dp" />
+
+    <EditText
+        android:id="@+id/playlist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Playlist"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="35dp" />
+
+    <ImageButton
+        android:id="@+id/playlist_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:background="@drawable/add"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="20dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="170dp"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/playlist_art1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/play_pause_circle"
+                    android:layout_marginLeft="20dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp">
+                    <EditText
+                        android:id="@+id/playlist1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Hearted"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                    <EditText
+                        android:id="@+id/song_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="175 songs"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/playlist_art2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/play_pause_circle"
+                    android:layout_marginLeft="20dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp">
+                    <EditText
+                        android:id="@+id/playlist2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Sunny"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                    <EditText
+                        android:id="@+id/song_number2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="46 songs"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/playlist_art3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/play_pause_circle"
+                    android:layout_marginLeft="20dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp">
+                    <EditText
+                        android:id="@+id/playlist3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Night"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                    <EditText
+                        android:id="@+id/song_number3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="84 songs"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/playlist_art4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/play_pause_circle"
+                    android:layout_marginLeft="20dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp">
+                    <EditText
+                        android:id="@+id/playlist4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Rain"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                    <EditText
+                        android:id="@+id/song_number4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="27 songs"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/playlist_art5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/play_pause_circle"
+                    android:layout_marginLeft="20dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp">
+                    <EditText
+                        android:id="@+id/playlist5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Carplay"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                    <EditText
+                        android:id="@+id/song_number5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="63 songs"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:background="@android:color/transparent"
+                        android:enabled="false" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ImageButton
+    android:id="@+id/player_bar_mini"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|bottom"
+    android:background="@drawable/player_bar_mini" />
+
+    <ImageButton
+        android:id="@+id/player_album_art_mini"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_vertical|bottom"
+        android:background="@drawable/abbeyroad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="3dp" />
+
+    <ImageButton
+        android:id="@+id/player_heart_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_heart_mini"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible"
+        android:onClick="heart_add_to_hearted_playlist"/>
+
+    <ImageButton
+        android:id="@+id/player_hearted_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_hearted_mini"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible"
+        android:onClick="heart_add_to_hearted_playlist"/>
+
+    <ImageButton
+        android:id="@+id/player_play_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_play_mini"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/player_pause_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_pause_mini"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/player_next_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_next_mini"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="2dp" />
+
+</FrameLayout>

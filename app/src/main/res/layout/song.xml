@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:onClick="songPicked"
+    android:orientation="horizontal"
+    tools:context="io.revlver.revlver.Song" >
+
+    <ImageButton
+        android:id="@+id/song_album_art"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/abbeyroad"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="9dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:paddingTop="7dp"
+            android:paddingBottom="4dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/song_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF00"
+                android:textSize="14sp"
+                android:paddingBottom="15dp" />
+
+            <TextView
+                android:id="@+id/razmak"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="//"
+                android:textColor="#FFFF00"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/song_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#c48590"
+                android:textSize="12sp"
+                android:paddingBottom="15dp"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

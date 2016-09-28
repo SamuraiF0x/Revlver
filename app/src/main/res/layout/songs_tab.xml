@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:screenOrientation="portrait"
+    android:background="#352b3b"
+    tools:context="io.revlver.revlver.Library" >
+
+    <ImageButton
+        android:id="@+id/folder"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:background="@android:drawable/bottom_bar"
+        android:visibility="invisible"
+        android:layout_marginTop="50dp"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/artists"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:background="@android:drawable/bottom_bar"
+        android:visibility="invisible"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/albums"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:background="@android:drawable/bottom_bar"
+        android:visibility="invisible"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="180dp"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/songs"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:background="@android:drawable/bottom_bar"
+        android:visibility="visible"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="270dp"
+        android:clickable="true" />
+
+
+    <ImageButton
+        android:id="@+id/menu0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:background="@drawable/player_bar_mini" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_vertical"
+        android:background="@drawable/player_bar_mini"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/back_2_lib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/back_to_menu"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/folder_menu_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folder"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/artists_menu_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artists"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="110dp" />
+
+    <EditText
+        android:id="@+id/albums_menu_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Albums"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="196dp" />
+
+    <EditText
+        android:id="@+id/songs_menu_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Songs"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="290dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:screenOrientation="portrait">
+        <ListView
+            android:id="@+id/song_list"
+            android:layout_width="310dp"
+            android:layout_height="588dp"
+            android:paddingTop="110dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:scrollbars="none">
+        </ListView>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/player_bar_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom"
+        android:background="@drawable/player_bar_mini" />
+
+    <ImageButton
+        android:id="@+id/player_album_art_mini"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_vertical|bottom"
+        android:background="@drawable/abbeyroad"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="3dp" />
+
+    <ImageButton
+        android:id="@+id/player_heart_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_heart_mini"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible"
+        android:onClick="heart"/>
+
+    <ImageButton
+        android:id="@+id/player_hearted_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_hearted_mini"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible"
+        android:onClick="hearted"/>
+
+    <ImageButton
+        android:id="@+id/player_play_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_play_mini"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/player_pause_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_pause_mini"
+        android:layout_marginRight="65dp"
+        android:layout_marginBottom="2dp"
+        android:visibility="visible"
+        android:onClick="pause" />
+
+    <ImageButton
+        android:id="@+id/player_next_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|bottom|right"
+        android:background="@drawable/player_next_mini"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="player_next_mini" />
+
+</FrameLayout>
